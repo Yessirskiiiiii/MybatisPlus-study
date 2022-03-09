@@ -21,4 +21,9 @@ public class User {
     private Integer age;
     private String email;
 
+    public User(String name, Integer age, String email) {
+        this.name = name;
+        this.age = age;
+        this.email = email;
+    }
 }
