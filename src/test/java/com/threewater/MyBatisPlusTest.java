@@ -111,6 +111,11 @@ public class MyBatisPlusTest {
         for (User user1 : userList2) {
             System.out.println(user1);
         }
+
+        // 自定义查询功能
+        // select id, 'name', age, email from user where id = ?
+        Map<String, Object> map1 = userMapper.selectMapById(1L);
+        System.out.println(map1);
     }
 
 }

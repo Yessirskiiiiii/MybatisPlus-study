@@ -3,6 +3,9 @@ package com.threewater.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.threewater.pojo.User;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  *
@@ -11,4 +14,8 @@ import com.threewater.pojo.User;
  * @Description:
  */
 public interface UserMapper extends BaseMapper<User> {
+
+    // 根据id查询用户信息为map集合
+    Map<String, Object> selectMapById(Long id);
+
 }
